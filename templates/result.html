@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+    <div class="container align-items-center shadow rounded my-5 mb-5 p-5 bg-light">
+        
+        {% if flower %}        
+        <h1 class="mb-4 text-center">Flower Details:</h1>
+        <ul class="list-group">
+            <li class="list-group-item m-2 p-2 display-6">Sepal Length (in cm): <b>{{ flower.sepalLength }}</b></li>
+            <li class="list-group-item m-2 p-2 display-6">Sepal Width (in cm): <b>{{ flower.sepalWidth }}</b></li>
+            <li class="list-group-item m-2 p-2 display-6">Petal Length (in cm): <b>{{ flower.petalLength }}</b></li>
+            <li class="list-group-item m-2 p-2 display-6">Petal Width (in cm): <b>{{ flower.petalWidth }}</b></li>
+        </ul>
+        {% else %}
+        <h1 class="mb-4 text-center">Method not allowed</h1>
+        {% endif %}
+    </div>
+
+    <div class="container mt-4 p-5 shadow bg-light text-center rounded">
+        
+        {% if result %}
+        <h1 class="display-4">Flower is: {{ result }}</h1>
+        {% else %}
+        <h1 class="display-4">Oops!!, some error occured.</h1>
+        {% endif %}
+    </div>
+{% endblock contents %}
