@@ -33,7 +33,7 @@ This is a web application built with Flask for predicting flower species based o
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/moti9/flower-predictor.git
+   git clone https://github.com/moti9/Iris-Flower-Using-KNN.git
     ```
 2. Navigate to the project directory:
 
